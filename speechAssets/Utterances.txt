@@ -1,0 +1,3 @@
+DenisHelloWorldIntent hello
+DenisHelloWorldIntent say hello
+DenisHelloWorldIntent say hello world
