@@ -25,7 +25,7 @@ alexaApp.launch( (request, response) => {
 
 // alexaApp.dictionary = { "names": ["matt", "joe", "bob", "bill", "mary", "jane", "dawn"] }
 
-alexaApp.intent('DenisHelloWorldIntent', {
+alexaApp.intent('HelloAppIntent', {
     'utterances': ['hello', 'say hello', 'hello world']
   },
   (request, response) => {
