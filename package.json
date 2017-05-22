@@ -1,5 +1,5 @@
 {
-  "name": "alexa-test",
+  "name": "alexa-skill-hello",
   "version": "1.0.0",
   "description": "Just testing Alexa Skills",
   "main": "src/index.js",
@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DenisPopov15/alexa-test.git"
+    "url": "git+https://github.com/FantomNexx/nodejs-alexa-skill-hello.git"
   },
   "keywords": [
     "Alexa",
     "Hello",
     "World"
   ],
-  "author": "Denis Popov",
+  "author": "Fantom Nexx",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DenisPopov15/alexa-test/issues"
+    "url": "https://github.com/FantomNexx/nodejs-alexa-skill-hello/issues"
   },
-  "homepage": "https://github.com/DenisPopov15/alexa-test#readme",
+  "homepage": "https://github.com/FantomNexx/nodejs-alexa-skill-hello#readme",
   "dependencies": {
     "alexa-app": "^4.0.0",
     "alexa-sdk": "^1.0.9",

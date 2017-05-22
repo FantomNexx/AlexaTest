@@ -1,38 +1,44 @@
-'use strict'
+'use strict';
 
-require('dotenv').config()
+require( 'dotenv' ).config();
 
-const express = require('express')
-const alexa = require('alexa-app')
+const express_lib = require( 'express' );
+const alexa_lib   = require( 'alexa-app' );
 
-const PORT = process.env.PORT
-const app = express()
+const PORT = process.env.PORT;
 
-// ALWAYS setup the alexa app and attach it to express before anything else.
-const alexaApp = new alexa.app('/')
+const express_app = express_lib();
 
-alexaApp.express({
-  expressApp: app,
-  checkCert: false,
-  debug: true
-})
+// ALWAYS setup the alexa app and attach it to express
+// before anything else
+const alexa_app = new alexa_lib.app( '/' );
 
-// app.set("view engine", "ejs")
+alexa_app.express( {
+	expressApp : express_app,
+	checkCert  : false,
+	debug      : true
+} );
 
-alexaApp.launch( (request, response) => {
-  response.say('You launched the app!')
-})
 
-// alexaApp.dictionary = { "names": ["matt", "joe", "bob", "bill", "mary", "jane", "dawn"] }
+var intent_name   = 'HelloAppIntent';
+var intent_params = {
+	'utterances' : ['hello', 'say hello', 'hello world']
+};
 
-alexaApp.intent('HelloAppIntent', {
-    'utterances': ['hello', 'say hello', 'hello world']
-  },
-  (request, response) => {
-    response.say('Hello for You too')
-  }
-)
+alexa_app.launch( onLaunch );
+alexa_app.intent( intent_name, intent_params, onIntent );
 
-app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}!`)
-})
+express_app.listen( PORT, onRequest );
+
+
+function onLaunch( request, response ){
+	response.say( 'You launched the app!' );
+}
+
+function onIntent( request, response ){
+	response.say( 'Hello, I\'m alive! ' );
+}
+
+function onRequest(){
+	console.log( 'Example app listening on port ${PORT}!' );
+}
