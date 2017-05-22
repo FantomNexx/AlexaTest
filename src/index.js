@@ -20,7 +20,7 @@ alexa_app.express( {
 } );
 
 
-var intent_name   = 'HelloAppIntent';
+var intent_name   = 'IntentHello';
 var intent_params = {
 	'utterances' : ['hello', 'say hello', 'hello world']
 };

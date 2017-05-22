@@ -1,7 +1,7 @@
 {
   "intents": [
     {
-      "intent": "HelloAppIntent"
+      "intent": "IntentHello"
     }
   ]
 }
