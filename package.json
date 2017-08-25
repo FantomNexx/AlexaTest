@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FantomNexx/nodejs-alexa-skill-hello.git"
+    "url": "git+https://github.com/FantomNexx/alexa-skill-hello"
   },
   "keywords": [
     "Alexa",
@@ -19,9 +19,9 @@
   "author": "Fantom Nexx",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FantomNexx/nodejs-alexa-skill-hello/issues"
+    "url": "https://github.com/FantomNexx/alexa-skill-hello/issues"
   },
-  "homepage": "https://github.com/FantomNexx/nodejs-alexa-skill-hello#readme",
+  "homepage": "https://github.com/FantomNexx/alexa-skill-hello#readme",
   "dependencies": {
     "alexa-app": "^4.0.0",
     "alexa-sdk": "^1.0.9",
