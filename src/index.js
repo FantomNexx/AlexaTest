@@ -5,7 +5,7 @@ require( 'dotenv' ).config();
 const express_lib = require( 'express' );
 const alexa_lib   = require( 'alexa-app' );
 
-const PORT = process.env.PORT;
+const PORT = 443;//process.env.PORT;
 
 const express_app = express_lib();
 
