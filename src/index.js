@@ -40,5 +40,5 @@ function onIntent( request, response ){
 }
 
 function onRequest(){
-	console.log( 'Example app listening on port ${PORT}!' );
+	console.log( 'Example app listening on port:' + PORT );
 }
